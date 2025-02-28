@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="index.css">
+</head>
+<body>
+     <form action="" class="form1">
+          <fieldset class="form2">
+               <legend class="text">Application Form</legend>
+               <p class="str"> <label for="name" class=""> Post Name:</label> Operations Assistant Route & Fuel (অপারেশন্স অ্যাসিস্ট্যান্ট রুট এন্ড ফুয়েল )</p>
+              <fieldset class="form2 ">
+                    <legend class="text">Basic Information</legend>
+                    <label id="name">Enter Your Name :</label>
+                    <input type="text" id="" name="name" placeholder="Enter Your Name" required><br />
+                    <label id="name">আবেদনকারীর নাম (বাংলায়) :</label>
+                    <input type="text" id="" name="name" placeholder="আবেদনকারীর নাম (বাংলায়)" required><br />
+                    <label>Father's Name :</label>
+                    <input type="text" id="" name="name" placeholder="Enter Your Father's Name" required><br />
+                    <label>পিতার নাম (বাংলায়):</label>
+                    <input type="text" id="" name="name" placeholder="পিতার নাম (বাংলায়)" required><br />
+                    <label>Mother's Name :</label>
+                    <input type="text" id="" name="name"  placeholder="Enter Your Mother's Name" required><br />
+                    <label>মাতার নাম (বাংলায়):</label>
+                    <input type="text" id="" name="name" placeholder="মাতার  নাম (বাংলায়)" required><br />
+                    <label>Date of Birth (YYYY-MM-DD):</label>
+                    <input type="date"  name="dob" id="name" placeholder="YYYY-MM-DD"><br />
+                    <label for="register_country" class="label">Select Country:</label>
+                    <select name="country" id="name">
+                         <option value="islam">Slect</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="pakistan">pakistan</option>
+                        <option value="africa">africa</option>
+                        <option value="china">china</option>
+                        <option value="other">other</option>
+                    </select><br />
+                    <label for="registor-your-religion" class="label">Religion</label>
+                    <select name="religion"  id="name" >
+                         <option value="islam">Slect</option>
+                         <option value="islam">Islam</option>
+                         <option value="hinduism">Hinduism</option>
+                         <option value="buddhism">Buddhism</option>
+                         <option value="other">Christianity</option>
+                         <option value="other">other</option>
+                    </select><br />
+                    <!-- national id -->
+                    <label for="national-id">Your National ID: </label>
+                    <select name="national-id" id="national-id">
+                         <option value="no">No</option>
+                         <option value="yes">Yes</option>
+                    </select>
+                    
+                    <!-- Placeholder for the input field -->
+                    <div id="national-id-container"></div>
+                    
+                    <!-- birth registation -->
+                    <label for="birth-id">Your Birth Registration: </label>
+                    <select name="birth-id" id="birth-id">
+                         <option value="no">No</option>
+                         <option value="yes">Yes</option>
+                    </select>
+                    <div id="birth-id-container"></div> <!-- Changed class to id -->
+                    
+                    
+                    <!-- pasport -->
+                     <label for="Pasport-id">Your Pasport Id: </label>
+                    <select name="Pasport-id" id="Pasport-id">
+                         <option value="no">No</option>
+                         <option value="yes">Yes</option>
+                    </select>
+                    <div id="Pasport-id-container"></div> <!-- Changed class to id -->
+                    <!-- marital status -->
+                     <label for="marital-status" class="label">Marital Status</label>
+                    <select name="marital-status"  id="name" >
+                         <option value="single">Single</option>
+                         <option value="married">Married</option>
+                         <option value="divorced">Divorced</option>
+                         <option value="widowed">Widowed</option>
+                         <option value="other">other</option>
+                    </select><br />
+                    <!-- gender -->
+                     <label for="gender" class="label">Gender</label>
+                    <select name="gender"  id="name" >
+                         <option value="male">Male</option>
+                         <option value="female">Female</option>
+                         <option value="other">other</option>
+                    </select><br />
+                    <!-- mobile number -->
+                     <label for="mobile-number">Your Mobile Number: </label>
+                    <input type="text" id="name" name="mobile-number" required><br />
+                    <!-- conferm mobile number -->
+                     <label for="confirm-mobile-number">Confirm Mobile Number: </label>
+                    <input type="text" id="name" name="confirm-mobile-number" required><br />
+                    <!-- email -->
+                     <label for="email">Your Email: </label>
+                    <input type="email" id="name" name="email" required><br />
+                    <!-- quota -->
+                    <label for="quota-id">Your quota</label>
+                    <select name="quota-id" id="quota-id">
+
+                         <option value="Select">Select</option>
+                         <option value="freedom-fighter">Child of Freedom Fighter</option>
+                         <option value="handicapped">Physically Handicapped</option>
+                         <option value="minority">Authentic Minority</option>
+                         <option value="not-applicable">Not Applicable</option>
+                    </select>
+                    
+                    <div id="quota-id-container" aria-live="polite"></div>
+                    <!-- departmental status -->
+                     <label for="departmental-status" class="label">Departmental Status</label>
+                    <select name="departmental-status"  id="name" >
+                         <option value="Select">Select</option>
+                         <option value="Govt Empoly">Govt Empoly</option>
+                         <option value="Semi-Govt Empoly">Semi-Govt Empoly</option>
+                         <option value="Autonomus">Autonomus</option>
+                         <option value="Departmental Candidate">Departmental Candidate</option>
+                         <option value="other">other</option>
+                    </select>
+
+                    
+
+
+
+               </fieldset><br />
+               <div class="add">
+                    <div class=""><br />
+                         <fieldset>
+                              <legend class="">Present Address (বর্তমান ঠিকানা)</legend>
+                              <label for="address">Care of</label>
+                              <input type="text" id="address" name="address" required><br />
+                              <label for="address">Village/ Road/ House/ Flat</label>
+                              <input type="text" id="address" name="address" required><br />
+                              <label for="dist">District</label>
+                              <select name="address" id="dist" class="">
+                                   <option value="">Select</option>
+                              </select><br />
+                         <label for="upazila">Upazila</label>
+                         <select name="upazila" id="upazila" class="">
+                              <option value="">Select Upazila</option>
+                         </select><br/>
+                         <label for="post" class="">post office</label>
+                         <input type="text" id="post" name="post" required><br />
+                         <label for="post" class="">post code</label>
+                         <input type="number" id="post" name="post" required><br />
+
+
+                         </fieldset>
+                    </div>
+                    <div class="">
+                         <input type="checkbox" id="chake" name="cheke" value="Same as Present Address" />
+                         <label for="chake">Same as Present Address</label> <br>
+                         <fieldset>
+                              
+                              <legend class="">Permanent Address (স্থায়ী ঠিকানা)</legend>
+                              <label for="address">Care of</label>
+                              <input type="text" id="address" name="address" required><br />
+                              <label for="address">Village/ Road/ House/ Flat</label>
+                              <input type="text" id="address" name="address" required><br />
+                              <label for="dist2">District</label>
+                              <select name="address" id="dist2" class="">
+                                   <option value="">Select</option>
+                                   
+                              </select><br />
+                              <label for="upazila">Upazila</label>
+                              <select name="upazila" id="upazila" class="">
+                                   <option value="">Select Upazila</option>
+                              </select><br />
+                              <label for="post" class="">post office</label>
+                              <input type="text" id="post" name="post" required><br />
+                              <label for="post" class="">post code</label>
+                              <input type="number" id="post" name="post" required><br />
+                         </fieldset>
+                    </div>
+               </div>
+               <!-- SSC/Equivalent Level -->
+                <fieldset>
+                    <legend class="">SSC/Equivalent Level</legend>
+                    <div class="add">
+                         <div class="">
+                              <label for="ssc_board">Select Board</label>
+                              <select name="ssc_board" id="ssc_board">
+                                   <option value="">Select Board</option>
+                                   <option value="Dhaka">Dhaka Board</option>
+                                   <option value="Comilla">Comilla Board</option>
+                                   <option value="Rajshahi">Rajshahi Board</option>
+                                   <option value="Barisal">Barisal Board</option>
+                                   <option value="Chittagong">Chittagong Board</option>
+                                   <option value="Sylhet">Sylhet Board</option>
+                                   <option value="Mymensingh">Mymensingh Board</option>
+                                   <option value="Khulna">Khulna Board</option>
+                              
+                              </select><br />
+                              <label for="ssc_roll">Roll No.</label>
+                              <input type="number" id="ssc_roll" name="ssc_roll" required><br />
+                              <!-- Group/Subject -->
+                              <label for="ssc_group">Group/Subject</label>
+                              <select name="ssc_group" id="ssc_group">
+                                   <option value="">Select</option>
+                                   <option value="Science">Science</option>
+                                   <option value="Arts">Arts</option>
+                                   <option value="Commerce">Commerce</option>
+                                   <option value="Humanities">Humanities</option>
+                                   <option value="Social Studies">Social Studies</option>
+                                   <option value="English">English</option>
+                                   <option value="Mathematics">Mathematics</option>
+                                   <option value="Physics">Physics</option>
+                                   <option value="Chemistry">Chemistry</option>
+                                   <option value="Biology">Biology</option>
+                                   <option value="Computer Science">Computer Science</option>
+                                   <option value="Geography">Geography</option>
+                                   <option value="History">History</option>
+                                   <option value="Economics">Economics</option>
+                              </select>
+                         </div>
+                         <div class="">
+                              <!-- board -->
+                               <label for="ssc_board">Select Board</label>
+                               <select name="ssc_board" id="ssc_board">
+                                   <option value="">Select Board</option>
+                                   <option value="Dhaka">Dhaka Board</option>
+                                   <option value="Comilla">Comilla Board</option>
+                                   <option value="Rajshahi">Rajshahi Board</option>
+                                   <option value="Barisal">Barisal Board</option>
+                                   <option value="Chittagong">Chittagong Board</option>
+                                   <option value="Sylhet">Sylhet Board</option>
+                                   <option value="Mymensingh">Mymensingh Board</option>
+                                   <option value="Khulna">Khulna Board</option>
+                               </select><br />
+                               <!-- result -->
+                                <label for="ssc_result">Result</label>
+                               <select name="ssc_result" id="ssc_result" class="">
+                                   <option value="">Select</option>
+                                   <option value="GPA(out of 5)">GPA(out of 5)</option>
+                                   <option value="Pass">Passed</option>
+                                  
+                               </select>
+                               <div id="ssc_result-container"></div>
+                               <!-- passing year -->
+                                <label for="ssc_passing_year">Passing Year</label>
+                               <select name="ssc_passing_year" id="ssc_passing_year" class=""></select>
+
+                         </div>
+                    </div>
+
+                </fieldset>
+                <!-- hsc or equavlent -->
+               <fieldset>
+                    <legend class="">Hsc/Equivalent Level</legend>
+                    <div class="add">
+                         <div class="">
+                              <label for="Hsc_board">Select Board</label>
+                              <select name="Hsc_board" id="ssc_board">
+                                   <option value="">Select Board</option>
+                                   <option value="Dhaka">Dhaka Board</option>
+                                   <option value="Comilla">Comilla Board</option>
+                                   <option value="Rajshahi">Rajshahi Board</option>
+                                   <option value="Barisal">Barisal Board</option>
+                                   <option value="Chittagong">Chittagong Board</option>
+                                   <option value="Sylhet">Sylhet Board</option>
+                                   <option value="Mymensingh">Mymensingh Board</option>
+                                   <option value="Khulna">Khulna Board</option>
+               
+                              </select><br />
+                              <label for="Hsc_roll">Roll No.</label>
+                              <input type="number" id="Hsc_roll" name="Hsc_roll" required><br />
+                              <!-- Group/Subject -->
+                              <label for="Hsc_group">Group/Subject</label>
+                              <select name="Hsc_group" id="Hsc_group">
+                                   <option value="">Select</option>
+                                   <option value="Science">Science</option>
+                                   <option value="Arts">Arts</option>
+                                   <option value="Commerce">Commerce</option>
+                                   <option value="Humanities">Humanities</option>
+                                   <option value="Social Studies">Social Studies</option>
+                                   <option value="English">English</option>
+                                   <option value="Mathematics">Mathematics</option>
+                                   <option value="Physics">Physics</option>
+                                   <option value="Chemistry">Chemistry</option>
+                                   <option value="Biology">Biology</option>
+                                   <option value="Computer Science">Computer Science</option>
+                                   <option value="Geography">Geography</option>
+                                   <option value="History">History</option>
+                                   <option value="Economics">Economics</option>
+                              </select>
+                         </div>
+                         <div class="">
+                              <!-- board -->
+                              <label for="Hsc_board">Select Board</label>
+                              <select name="Hsc_board" id="Hsc_board">
+                                   <option value="">Select Board</option>
+                                   <option value="Dhaka">Dhaka Board</option>
+                                   <option value="Comilla">Comilla Board</option>
+                                   <option value="Rajshahi">Rajshahi Board</option>
+                                   <option value="Barisal">Barisal Board</option>
+                                   <option value="Chittagong">Chittagong Board</option>
+                                   <option value="Sylhet">Sylhet Board</option>
+                                   <option value="Mymensingh">Mymensingh Board</option>
+                                   <option value="Khulna">Khulna Board</option>
+                              </select><br />
+                              <!-- result -->
+                              <label for="Hsc_result">Result</label>
+                              <select name="Hsc_result" id="Hsc_result" class="">
+                                   <option value="">Select</option>
+                                   <option value="GPA(out of 5)">GPA(out of 5)</option>
+                                   <option value="Pass">Passed</option>
+               
+                              </select>
+                              <div id="Hsc_result-container"></div>
+                              <!-- passing year -->
+                              <label for="Hsc_passing_year">Passing Year</label>
+                              <select name="Hsc_passing_year" id="Hsc_passing_year" class=""></select>
+               
+                         </div>
+                    </div>
+               
+               </fieldset>
+               <!-- Graduation-Equivalent Level -->
+                <fieldset>
+                    <legend class="">Graduation/Equivalent Level</legend>
+                    <div class="add">
+                         <div class="">
+                              <!-- Examinication-->
+                               <label for="graduation_examination">Select Examination</label>
+                               <select name="graduation_examination" id="graduation_examination">
+                                   <option value="select" class="">select</option>
+                                   <option value="B.s.c Enginnering">B.s.c Enginnering</option>
+                                   <option value="B.s.c in agricultureal science" class="">B.s.c in agricultureal science</option>
+                                   <option value="M.B.b.S/B.D.S" class="">M.B.b.S/B.D.S</option>
+                                   <option value="Honors" class="">Honors</option>
+                                   <option value="pass course" class="">pass course</option>
+                                   <option value="Fazil" class="">Fazil</option>
+                                   <option value="B.B.A" class="">B.B.A</option>
+                                   <option value="" class="">Gradution equavlent</option>
+                                  
+                                   
+                               </select><br />
+                               <!-- University/Inst -->
+                                <label for="University/Inst" class="">University/Inst</label>
+                                <select name="University/Inst" id="University/Inst" class="">
+                                   <option value="">Select a university</option>
+                                </select><br />
+                                <!-- passing year -->
+                              <label for="Graduation-Equivalent">Passing Year</label>
+                              <select name="Graduation-Equivalent" id="Graduation-Equivalent" class=""></select>
+                              
+                         </div>
+                         <!-- subject/degree -->
+                         <div class="">
+                              <label for="subject-degree" class="">Subject/Degree</label>
+                              <select name="subject-degree" id="subject-degree" class="">
+                                   <option value="">Select a subject</option>
+                              </select>
+
+
+                         </div>
+                    </div>
+                </fieldset>
+               <input type="checkbox" id="toggleButton" name="chake" value="if applicable" />
+               <label for="toggleButton">if applicable</label> <br/>
+               <fieldset id="myFieldset" disabled>
+                    <legend class="">Masters/Equivalent Level </legend>
+                    <div class="add">
+                         <div class="">
+                              <label for="exam" class="">Examinitaion</label>
+                              <select name="exam" id="exam" class="">
+                                   <option value="">Select Examination</option>
+                              </select><br />
+                              <!-- University/Inst -->
+                              <label for="University/Inst1" class="">University/Inst</label>
+                              <select name="University/Inst1" id="University/Inst1" class="">
+                                   <option value="University/Inst1">Select</option>
+                              </select><br />
+                              <!-- passing year -->
+                              <label for="passing" class="">passing year</label>
+                              <select name="passing" id="passing" class="">
+                                   <option value="passing" class="">select</option>
+                              </select>
+                         </div>
+                         <div class="">
+                              <!-- Subject/Degree -->
+                               <label for="Subject/Degree" class="">Subject/Degree</label>
+                               <select name="Subject/Degree" id="Subject/Degree" class="">
+                                   <option value="Subject/Degree" class="">Select</option>
+                               </select><br />
+                               <!-- course duration -->
+                                <label for="course_duration" class="">Course Duration</label>
+                               <select name="course_duration" id="course_duration" class="">
+                                   <option value="course_duration">select</option>
+                               </select><br />
+                               <!-- result -->
+                                <label for="result" class="">Result</label>
+                               <select name="result" id="result" class="">
+                                   <option value="result">select</option>
+                                   <option value="1'st division" class="">1'st division</option>
+                                   <option value="2'nd division" class="">2'nd division</option>
+                                   <option value="3'rd division" class="">3'rd division</option>
+                                   <option value="passed" class="">passed</option>
+                                   <option value="GPA (out of 5)" class="">GPA (out of 5)</option>
+                                   <option value="GPA (out of 4)" class="">GPA (out of 4)</option>
+                               </select>
+                               <div id="result-container"></div>
+                         </div>
+                    </div>
+               </fieldset>
+               <!-- job expedience -->
+                
+               <div class="exp">
+                    <input type="checkbox" id="job-expedience" name="chake" value="if applicable" />
+                    <label for="job-expedience">if applicable</label> <br />
+                    <fieldset id="job-Container" disabled>
+                         <legend>Job Experience
+                              <button type="button" disabled id="job-btn">Add More Experience</button>
+                         </legend>
+                         <!-- Employment -->
+                         <label for="empoly-on">Employ-on</label>
+                         <select name="empoly-on" id="empoly-on">
+                              <option value="empoly-on">Select</option>
+                         </select><br />
+                         <!-- Designation/Post  -->
+                          <label for="Designation/Post" class="">Designation/Post</label>
+                          <input type="text" id="Designation/Post" name="Designation/Post" required><br />
+                          <!-- date -->
+                         <label>Date of Birth (YYYY-MM-DD):</label>
+                         <input type="date" name="dob" id="name" placeholder="YYYY-MM-DD"> to <input type="date" name="dob" id="my-date" placeholder="YYYY-MM-DD"><br/>
+                         <!--  -->
+                         <input type="checkbox" id="current-date" name="chake" value="currently working" />
+                         <label for="current-date">currently working</label> <br />
+                         <!-- Organization -->
+                          <label for="Organization" class="">Organization</label>
+                          <input type="text" id="Organization" name="Organization" required><br />
+                          <!-- address -->
+                           <label for="address" class="">Address</label>
+                          <input type="text" id="address" name="address" required><br /><br />
+                          <!-- job description -->
+                           <label for="text-area" class="">job description :</label>
+                           <textarea name="text" id="text-area" rows="2" col="90"></textarea>
+                          
+                    </fieldset><br />
+               </div>
+               <fieldset>
+                    <legend class="">Other Experiences</legend>
+                    <label for="other-experience" class="">1) Do you have expertise in Computer Operation?</label>
+                    <select name="other-experience" id="other-experience">
+                         <option value="other-experience">select</option>
+                         <option value="other-experience">yes</option>
+                         <option value="other-experience">no</option>
+                    </select><br />
+                    <label for="other-experience" class="">2) Do you have expertise in English Conversation?</label>
+                    <select name="other-experience" id="other-experience">
+                         <option value="other-experience">select</option>
+                         <option value="other-experience">yes</option>
+                         <option value="other-experience">no</option>
+                    </select><br />
+                    
+               </fieldset>
+               <!-- Verification Code -->
+               <fieldset>
+                    <legend>Verification Code</legend>
+                    <label for="Verification Code" class="">Enter the Verification Code:</label>
+                    <input type="text" id="Verification Code">
+               </fieldset>
+               <!--  -->
+               <input type="checkbox" id="job-expedience" name="chake" value="if applicable" />
+               <label for="job-expedience">I declare that the information provided above are correct, true and complete to the best of
+                    my knowledge and belief. And
+                    I would like to go to the next step.</label> <br /><br />
+                    <button type="submit" id="">Submit</button>
+          </fieldset>
+          
+         
+     </form>
+     <script src="./scrip.js"></script>
+</body>
+</html>
