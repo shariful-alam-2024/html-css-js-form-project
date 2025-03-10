@@ -308,12 +308,12 @@ const degree = [
      "other"
 
 ];
-const selectsubject = document.getElementById("Subject/Degree");
+const selectSubject9 = document.getElementById("Subject/Degree");
 degree.forEach(degree => {
      const option = document.createElement("option");
      option.value = degree.toLowerCase().replace(/\s+/g, "-");
      option.textContent = degree;
-     selectsubject.appendChild(option);
+     selectSubject9.appendChild(option);
 });
 // course_duration
 
@@ -444,5 +444,12 @@ document.getElementById("current-date").addEventListener("change", function () {
           dateInput.value = ""; // Clear the input if unchecked
      }
 });
+
+
+
+
+
+
+
 
 
