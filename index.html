@@ -125,52 +125,60 @@
 
                </fieldset><br />
                <div class="add">
-                    <div class=""><br />
+                    <div>
                          <fieldset>
-                              <legend class="">Present Address (বর্তমান ঠিকানা)</legend>
-                              <label for="address">Care of</label>
-                              <input type="text" id="address" name="address" required><br />
-                              <label for="address">Village/ Road/ House/ Flat</label>
-                              <input type="text" id="address" name="address" required><br />
-                              <label for="dist">District</label>
-                              <select name="address" id="dist" class="">
+                              <legend>Present Address (বর্তমান ঠিকানা)</legend>
+                              <label for="present_care">Care of</label>
+                              <input type="text" id="present_care" required><br />
+               
+                              <label for="present_village">Village/ Road/ House/ Flat</label>
+                              <input type="text" id="present_village" required><br />
+               
+                              <label for="present_district">District</label>
+                              <select id="present_district">
                                    <option value="">Select</option>
                               </select><br />
-                         <label for="upazila">Upazila</label>
-                         <select name="upazila" id="upazila" class="">
-                              <option value="">Select Upazila</option>
-                         </select><br/>
-                         <label for="post" class="">post office</label>
-                         <input type="text" id="post" name="post" required><br />
-                         <label for="post" class="">post code</label>
-                         <input type="number" id="post" name="post" required><br />
-
-
-                         </fieldset>
-                    </div>
-                    <div class="">
-                         <input type="checkbox" id="chake" name="cheke" value="Same as Present Address" />
-                         <label for="chake">Same as Present Address</label> <br>
-                         <fieldset>
-                              
-                              <legend class="">Permanent Address (স্থায়ী ঠিকানা)</legend>
-                              <label for="address">Care of</label>
-                              <input type="text" id="address" name="address" required><br />
-                              <label for="address">Village/ Road/ House/ Flat</label>
-                              <input type="text" id="address" name="address" required><br />
-                              <label for="dist2">District</label>
-                              <select name="address" id="dist2" class="">
-                                   <option value="">Select</option>
-                                   
-                              </select><br />
-                              <label for="upazila">Upazila</label>
-                              <select name="upazila" id="upazila" class="">
+               
+                              <label for="present_upazila">Upazila</label>
+                              <select id="present_upazila">
                                    <option value="">Select Upazila</option>
                               </select><br />
-                              <label for="post" class="">post office</label>
-                              <input type="text" id="post" name="post" required><br />
-                              <label for="post" class="">post code</label>
-                              <input type="number" id="post" name="post" required><br />
+               
+                              <label for="present_post">Post Office</label>
+                              <input type="text" id="present_post" required><br />
+               
+                              <label for="present_code">Post Code</label>
+                              <input type="number" id="present_code" required><br />
+                         </fieldset>
+                    </div>
+               
+                    <div>
+                         <input type="checkbox" id="chake">
+                         <label for="chake">Same as Present Address</label><br>
+               
+                         <fieldset>
+                              <legend>Permanent Address (স্থায়ী ঠিকানা)</legend>
+                              <label for="permanent_care">Care of</label>
+                              <input type="text" id="permanent_care" required><br />
+               
+                              <label for="permanent_village">Village/ Road/ House/ Flat</label>
+                              <input type="text" id="permanent_village" required><br />
+               
+                              <label for="permanent_district">District</label>
+                              <select id="permanent_district">
+                                   <option value="">Select</option>
+                              </select><br />
+               
+                              <label for="permanent_upazila">Upazila</label>
+                              <select id="permanent_upazila">
+                                   <option value="">Select Upazila</option>
+                              </select><br />
+               
+                              <label for="permanent_post">Post Office</label>
+                              <input type="text" id="permanent_post" required><br />
+               
+                              <label for="permanent_code">Post Code</label>
+                              <input type="number" id="permanent_code" required><br />
                          </fieldset>
                     </div>
                </div>

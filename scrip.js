@@ -55,105 +55,87 @@ document.getElementById("quota-id").addEventListener("change", function () {
      }
 });
 // distrect present addresses
-const distrect = [
-     "Bandarban",
-     "Barguna",
-     "Barisal",
-     "Bhola",
-     "Jhalokati",
-     "Patuakhali",
-     "Chandpur",
-     "Chittagong",
-     "Comilla",
-     "Dhaka",
-     "Dinajpur",
-     "Faridpur",
-     "Feni",
-     "Gopalganj",
-     "Habiganj",
-     "Jaipurhat",
-     "Kushtia",
-     "Lakshmipur",
-     "Madaripur",
-     "Manikganj",
-     "Mymensingh",
-     "Narayanganj",
-     "Narsinghdi",
-     "Netrakona",
-     "Nilphamari",
-     "Noakhali",
-     "Pabna",
-     "Panchagarh",
-     "Patuakhali",
-     "Rajshahi",
-     "Rangpur",
-     "Satkhira",
-     "Sirajganj",
-     "Sunamganj",
-     "Sylhet",
-     "Tangail",
-     "Vejna",
-     "Vitayanagar",
-     "Yaziganj"
-
+const districts = [
+     "Barguna", "Barisal", "Bhola", "Jhalokathi", "Patuakhali", "Pirojpur", "B_baria", "Bandarban", "Chandpur", "Chattogram", "Cox_s_bazar", "Cumilla",
+     "Feni"
 ];
-const selectElement2 = document.getElementById("dist");
-distrect.forEach(distrect => {
-     const option = document.createElement("option");
-     option.value = distrect.toLowerCase().replace(/\s+/g, "-");
-     option.textContent = distrect;
-     selectElement2.appendChild(option);
-});
-// permanent addresses
-const distrect1 = [
-     "Bandarban",
-     "Barguna",
-     "Barisal",
-     "Bhola",
-     "Jhalokati",
-     "Patuakhali",
-     "Chandpur",
-     "Chittagong",
-     "Comilla",
-     "Dhaka",
-     "Dinajpur",
-     "Faridpur",
-     "Feni",
-     "Gopalganj",
-     "Habiganj",
-     "Jaipurhat",
-     "Kushtia",
-     "Lakshmipur",
-     "Madaripur",
-     "Manikganj",
-     "Mymensingh",
-     "Narayanganj",
-     "Narsinghdi",
-     "Netrakona",
-     "Nilphamari",
-     "Noakhali",
-     "Pabna",
-     "Panchagarh",
-     "Patuakhali",
-     "Rajshahi",
-     "Rangpur",
-     "Satkhira",
-     "Sirajganj",
-     "Sunamganj",
-     "Sylhet",
-     "Tangail",
-     "Vejna",
-     "Vitayanagar",
-     "Yaziganj"
 
-];
-const selectElement3 = document.getElementById("dist2");
-distrect1.forEach(distrect1 => {
-     const option = document.createElement("option");
-     option.value = distrect1.toLowerCase().replace(/\s+/g, "-");
-     option.textContent = distrect1;
-     selectElement3.appendChild(option);
+function populateDistricts(selectElementId) {
+     const selectElement = document.getElementById(selectElementId);
+     districts.forEach(district => {
+          const option = document.createElement("option");
+          option.value = district;
+          option.textContent = district;
+          selectElement.appendChild(option);
+     });
+}
+
+populateDistricts("present_district");
+populateDistricts("permanent_district");
+
+const upa = {
+     Barisal: ['Agailjhara', 'Babuganj', 'Bakerganj', 'Banaripara', 'Barisal-s', 'Gouranadi', 'Hizla', 'Mehendiganj', 'Muladi', 'Uzirpur'],
+
+     Barguna: ['Amtali', 'Bamna', 'Betagi', 'Pathargata', 'Taltali'],
+
+     Bhola: ['Bhola-s', 'Borhanuddin', 'charfassion', 'Daulatkhan', 'Lalmohan', 'Monpura', 'Tazumuddin',],
+
+     Jhalokathi: ['Jhalokathi-s', 'Rajapur', 'Nalchity', 'kathalia'],
+     Patuakhali: ['Patuakhali-s', 'Rangabali', 'Bhandria', 'Mirjaganj', 'Dumki', 'galachipa', 'Dashmina', 'Bauphal'],
+     Pirojpur: ['Pirojpur-s', 'Kawkhali', 'Mothbaria', 'Nazirpur', 'Nesarabad', 'Zianagar'],
+     B_baria: ['B_baria-s', 'Ashuganj', 'Bancharampur', 'Kasba', 'Bijoynagar', 'Nabinagar', 'Nasirnagar', 'Sarail'],
+     Bandarban: ['Bandarban-s', 'Lama', 'Ruma', 'Thanchi', 'Naikhyongchari', 'Rowangchari', 'Alikadam'],
+     Chandpur: ['Chandpur-s', 'Faridganj', 'Haimchar', 'Haziganj', 'Kachua', 'Matlab (Dakshin)', 'Matlab (Uttar)', 'Shahrasti'],
+     Chattogram: ['Chattogram-s', 'Anwara', 'Banskhali', 'Boalkhali', 'Chandanish', 'Fatikchari', 'Hathazari', 'Karnaphuli', 'Lohagara', 'Mirsharai', 'Patiya', 'Rangunia', 'Raojan', 'Sandwip', 'Satkania', 'Sitakunda'],
+     Cox_s_bazar: ["Cox's bazar-s", 'Ramu', 'Chakoria', 'Kutubdia', 'Moheskhali', 'Ukhiya', 'Teknaf', 'pekua',],
+     Cumilla: ['Titas', 'Nangalkot', 'Muradnagar', 'Monohorganj', 'Meghna', 'Lalmai', 'Laksham', 'Homna', 'Debidwar', 'Daudkandi', 'Cumilla-S Daksin', 'Cumilla-S', 'Chouddagram', 'Chandina', 'Burichong', 'Brahmanpara', 'Barura'],
+     Feni: ['Feni-s', 'Sonagazi', 'Porshuram', 'Fulgazi', 'Daganbhuiyan', 'Chhagalniya',],
+};
+
+function updateUpazila(districtSelect, upazilaSelect) {
+     const selectedDistrict = districtSelect.value;
+     upazilaSelect.innerHTML = '<option value="">Select Upazila</option>';
+
+     if (selectedDistrict && upa[selectedDistrict]) {
+          upa[selectedDistrict].forEach(upazila => {
+               const option = document.createElement("option");
+               option.value = upazila;
+               option.textContent = upazila;
+               upazilaSelect.appendChild(option);
+          });
+     }
+}
+
+document.getElementById("present_district").addEventListener("change", function () {
+     updateUpazila(this, document.getElementById("present_upazila"));
 });
+
+document.getElementById("permanent_district").addEventListener("change", function () {
+     updateUpazila(this, document.getElementById("permanent_upazila"));
+});
+
+document.getElementById("chake").addEventListener("change", function () {
+     if (this.checked) {
+          document.getElementById("permanent_care").value = document.getElementById("present_care").value;
+          document.getElementById("permanent_village").value = document.getElementById("present_village").value;
+          document.getElementById("permanent_district").value = document.getElementById("present_district").value;
+
+          // Trigger change event to update upazilas
+          document.getElementById("permanent_district").dispatchEvent(new Event('change'));
+
+          document.getElementById("permanent_upazila").value = document.getElementById("present_upazila").value;
+          document.getElementById("permanent_post").value = document.getElementById("present_post").value;
+          document.getElementById("permanent_code").value = document.getElementById("present_code").value;
+     } else {
+          document.getElementById("permanent_care").value = "";
+          document.getElementById("permanent_village").value = "";
+          document.getElementById("permanent_district").value = "";
+          document.getElementById("permanent_upazila").innerHTML = '<option value="">Select Upazila</option>';
+          document.getElementById("permanent_post").value = "";
+          document.getElementById("permanent_code").value = "";
+     }
+});
+
 // ssc equavlent
 document.getElementById("ssc_result").addEventListener("change", function () {
      const container = document.getElementById("ssc_result-container"); // Now correctly references the id
